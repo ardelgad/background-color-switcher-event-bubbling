@@ -11,9 +11,6 @@ colors.addEventListener("click", function (event) {
     */
 
     //Para que funcione el color verde (se llama diferente al color)
-    document.body.style.backgroundColor = window.getComputedStyle(event.target).backgroundColor;
-
-    /* if (color == "micolor") {
-        document.body.style.backgroundColor = 'rgba(77, 138, 85, 0.8)';             
-    } */
+    let color = event.target
+    document.body.style.backgroundColor = window.getComputedStyle(color).backgroundColor;
 })
